@@ -4,7 +4,7 @@ import HomeScreen from './Home';
 import CartScreen from './Cart';
 import TransactionScreen from './Transaction';
 import ProfileScreen from './Profile';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'components/Icon';
 
 const MainTab = () => {
   const Tab = createBottomTabNavigator();
@@ -23,7 +23,7 @@ const MainTab = () => {
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({color, size}) => (
-            <Icon name="home" color={color} size={size * 0.9} />
+            <Icon name="Home" fill={color} height={size} width={size} />
           ),
         }}
       />
@@ -33,7 +33,7 @@ const MainTab = () => {
         options={{
           tabBarLabel: 'Cart',
           tabBarIcon: ({color, size}) => (
-            <Icon name="shopping-cart" color={color} size={size * 0.9} />
+            <Icon name="Cart" fill={color} height={size} width={size} />
           ),
         }}
       />
@@ -43,7 +43,12 @@ const MainTab = () => {
         options={{
           tabBarLabel: 'Transaction',
           tabBarIcon: ({color, size}) => (
-            <Icon name="exchange" color={color} size={size * 0.9} />
+            <Icon
+              name="Exchange"
+              fill={color}
+              height={size * 1.2}
+              width={size * 1.2}
+            />
           ),
         }}
       />
@@ -53,7 +58,7 @@ const MainTab = () => {
         options={{
           tabBarLabel: 'Profile',
           tabBarIcon: ({color, size}) => (
-            <Icon name="user" color={color} size={size * 0.9} />
+            <Icon name="Me" fill={color} height={size} width={size} />
           ),
           tabBarBadge: '10',
         }}

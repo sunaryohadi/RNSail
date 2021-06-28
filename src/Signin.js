@@ -2,7 +2,7 @@ import React, {useState, useContext} from 'react';
 import {View, TextInput, Button} from 'react-native';
 import AuthContext from 'helpers/AuthContext';
 
-const Signin = (props) => {
+const Signin = props => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 

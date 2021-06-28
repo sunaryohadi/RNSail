@@ -1,8 +1,8 @@
-# RNSail - React Native Starter  0.4.0
+# RNSail - React Native Starter  0.5.0
 
 My starter kit for react native projects.  
 
-* [React Native](https://facebook.github.io/react-native/) 0.63.2
+* [React Native](https://facebook.github.io/react-native/) 0.64.2
 * [React Navigation](https://github.com/react-navigation/react-navigation) 5.x
 
 

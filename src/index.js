@@ -8,7 +8,7 @@ import SplashScreen from './Splash';
 import SignInScreen from './Signin';
 import AuthContext from 'helpers/AuthContext';
 
-const App = (props) => {
+const App = props => {
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState(null);
 
@@ -26,7 +26,7 @@ const App = (props) => {
     checkUser();
   }, []);
 
-  const signIn = (data) => {
+  const signIn = data => {
     setUser(data);
   };
 
